@@ -214,11 +214,28 @@ Universität Stuttgart \\ % Your institution for the title page
     \end{itemize}
 \end{frame}
 
+%-----------------------------------------------------------------
+\section{Methodology}
+
+\begin{frame}{Text to Speech}
+    \begin{itemize}
+        \item Melcepstral Distortion (MCD) comparison between original and generated speech
+        \item Results were generated from CMU\cite{cmu} and then compared with an English system \cite{ren2020fastspeech}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Machine Translation}
+    \begin{itemize}
+        \item BLEU score
+    \end{itemize}
+\end{frame}
+
 
 % --------------------------------------------------
 \section{Findings}
 % --------------------------------------------------
-\begin{frame}{Performance of selected systems}
+\begin{frame}{Results}
     \begin{block}{Text to Speech, $M = 0.32$}
        Text to Speech systems cover the highest number of languages (more than 630) but generated output is worse compared to that of English.
     \end{block}
@@ -232,7 +249,7 @@ Universität Stuttgart \\ % Your institution for the title page
     \end{block}
 \end{frame}
 
-\begin{frame}{Performance of selected systems (contd.)}
+\begin{frame}{Results (contd.)}
     \begin{block}{Question Answering and Natural Language Inference, $M_{\text{arabic}} = 0.58$, $M_{\text{arabic}} = 0.23$}
         \begin{itemize}
             \item 15 to 17 languages
@@ -311,6 +328,25 @@ Universität Stuttgart \\ % Your institution for the title page
 \newblock \emph{Advances in neural information processing systems} Volume 29, P4329--4357
 \end{thebibliography}
 
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{References}
+\footnotesize{
+    
+\begin{thebibliography}{101} % Beamer does not support BibTeX so references must be inserted manually as below
+\bibitem[ Black (2019)]{cmu} Black (2019)
+\newblock Cmu wilderness multilingual speech dataset
+\newblock \emph{ICASSP 2019-2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, P5971--5975
+\end{thebibliography}
+
+
+\begin{thebibliography}{101} % Beamer does not support BibTeX so references must be inserted manually as below
+\bibitem[Ren et al (2021)]{ren2020fastspeech} Ren, Yi and Hu, Chenxu and Tan, Xu and Qin, Tao and Zhao, Sheng and Zhao, Zhou and Liu, Tie-Yan (2021)
+\newblock Fastspeech 2: Fast and high-quality end-to-end text to speech
+\newblock \emph{arXiv preprint arXiv:2006.04558}
+\end{thebibliography}
 
 }
 \end{frame}
