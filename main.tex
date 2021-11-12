@@ -1,0 +1,305 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Language Technology for Diversity and Inclusion]{Systematic Inequalities in Language Technology Performance across the World’s Languages. Blasi et al. (2021)} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Shawon Ashraf} % Your name
+\institute[Universität Stuttgart] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Universität Stuttgart \\ % Your institution for the title page
+\medskip % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will %automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+\section{Introduction} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%------------------------------------------------
+
+%\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+
+\begin{frame}
+\frametitle{Systematic Inequality? }
+\begin{itemize}
+    \item In a social context: based on financial state, education etc.
+    \item Bias in NLP systems (race, gender) \cite{bias1} \cite{bias2}
+    \item Bias towards languages as well?
+\end{itemize}
+\end{frame}
+
+
+% --------------------------------------------------
+\section{Current Scenario}
+% --------------------------------------------------
+
+\begin{frame}
+\frametitle{Current Situation of NLP systems}
+\begin{itemize}
+\item Existing NLP systems are more prevalent for English
+\item German, Spanish, Chinese?
+\item Research in NLP is more or less fixated on a few languages.
+\item Some languages are under-served and under-represented.
+\item NLP systems targeting English are more performant than the others
+\item Google Translate \href{https://translate.google.com/intl/en/about/languages/}{\color{blue} works for about 100 languages}, but the quality of translations suffer when English is not the target or source language. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The need for NLP systems}
+
+\begin{itemize}
+    \item Utility and Demand
+    \item In other words, what people need and use and what they get or have
+    \item Performance of systems are dictated by utility, the more the systems are used the better their performance is
+    \item Performant systems are used more
+\end{itemize}
+    
+\end{frame}
+
+\begin{frame}{Defining inequality}
+
+\begin{itemize}
+    \item Less used systems get less attention
+    \item In turn they perform worse
+    \item Is inequality in NLP systems based on the users and what they use?
+    \item Demography vs Language
+\end{itemize}
+    
+\end{frame}
+
+
+% --------------------------------------------------
+\section{Evaluating Inequality}
+% --------------------------------------------------
+
+\begin{frame}{Selected systems}
+
+\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+
+\column{.45\textwidth} % Left column and width
+\textbf{Directly Interacted with}
+\begin{enumerate}
+\item Text to Speech
+\item Machine Translation
+\item Question Answering
+\end{enumerate}
+
+\column{.5\textwidth} % Left column and width
+\textbf{Indirect or unknown to users}
+\begin{enumerate}
+\item Syntactic Parsing under dependency formalism
+\item Natural Language Inference
+\item Morphological Inflection
+\end{enumerate}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Research Questions}
+\begin{itemize}
+    \item Does economy dictate the use of NLP systems? (Number of users, GDP etc.)
+    \item Can citations motivate research into more languages? 
+\end{itemize}
+
+\end{frame}
+
+
+% --------------------------------------------------
+\section{Findings}
+% --------------------------------------------------
+\begin{frame}{Performance of selected systems}
+    \begin{block}{Text to Speech}
+       Text to Speech systems cover the highest number of languages (more than 630) but generated output is worse compared to that of English.
+    \end{block}
+    
+    \begin{block}{Machine Translation (To English)}
+       Prefers utility over linguistic variety. Translations systems are more available for languages where users use such a system frequently.
+    \end{block}
+\end{frame}
+
+\begin{frame}{Performance of selected systems (contd.)}
+    \begin{block}{Question Answering and Natural Language Inference}
+        Cover around 15 to 17 languages. Again, affected by demography over language variety. 
+    \end{block}
+    
+    \begin{block}{Syntatic Parsing and Morphological Inflection}
+       Indirect, not affected by users. Higher language variety. 
+    \end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Language Variety vs Demography}
+%Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
+\begin{figure}
+\includegraphics[width=0.8\linewidth]{chart1.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Commercial Aspects}
+    \begin{itemize}
+        \item Most of the state of the art NLP systems were made for commercial purposes
+        \item Languages with a higher commercial value get better treatment
+        \item "Economic prowess" of the users of a language
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Academia}
+    \begin{itemize}
+        \item Lack of language description in published work
+        \item Prevalence of English leads to more work on English
+        \item Under-represented languages such as North Sami get totally ignored
+        \item However academic rewards and incentives are or can be motivating
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Academic representation of languages}
+%Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
+\begin{figure}
+\includegraphics[width=0.8\linewidth]{chart2.png}
+\end{figure}
+\end{frame}
+
+
+%------------------------------------------------
+\section{Wrapping up}
+%------------------------------------------------
+\begin{frame}{Take away points}
+    \begin{itemize}
+        \item Economy dictates the development of NLP systems
+        \item Academia is not motivated by economy and so can help mitigate the inequality in research
+        \item Low resource languages get left out because they are not commercially viable to invest in
+    \end{itemize}
+\end{frame}
+
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{References}
+\footnotesize{
+\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
+\bibitem[Kiritchenko et al. (2018)]{bias1} Kiritchenko, Svetlana and Mohammad, Saif M (2018)
+\newblock Examining gender and race bias in two hundred sentiment analysis systems
+\newblock \emph{arXiv preprint arXiv:1805.04508}
+\end{thebibliography}
+
+
+\begin{thebibliography}{100} % Beamer does not support BibTeX so references must be inserted manually as below
+\bibitem[Bolukbasi et al. (2016)]{bias2} Bolukbasi, Tolga and Chang, Kai-Wei and Zou, James Y and Saligrama, Venkatesh and Kalai, Adam T (2016)
+\newblock Man is to computer programmer as woman is to homemaker? debiasing word embeddings
+\newblock \emph{Advances in neural information processing systems} Volume 29, P4329--4357
+\end{thebibliography}
+
+
+}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\Huge{\centerline{Thank you}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
