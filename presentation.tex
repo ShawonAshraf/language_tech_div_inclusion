@@ -220,14 +220,54 @@ Universität Stuttgart \\ % Your institution for the title page
 \begin{frame}{Text to Speech}
     \begin{itemize}
         \item Melcepstral Distortion (MCD) comparison between original and generated speech
-        \item Results were generated from CMU\cite{cmu} and then compared with an English system \cite{ren2020fastspeech}
+        \item Results were generated from CMU\cite{cmu} and then compared with an English
+        system \cite{ren2020fastspeech}
+        \item Scaled afterwards with maximum reported MCD score
+        \item More than 630 languages covered
     \end{itemize}
 \end{frame}
 
 
 \begin{frame}{Machine Translation}
     \begin{itemize}
-        \item BLEU score
+        \item Collected results from MT evaluation campaigns or studies
+        \item WMT, IWSLT
+        \item ACL, EMNLP, NAACL
+        \item BLEU score normalized by utility (using the largest reported score)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Natural Language Inference}
+    \begin{itemize}
+        \item XNLI 15 results
+        \item Test dataset for 15 languages
+        \item Accuracy equated to Utility
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Question Answering}
+    \begin{itemize}
+        \item Results from TyDi-QA and MLQA benchmarks
+        \item 17 languages covered jointly by the benchmarks
+        \item English and Arabic are common languages in both benchmarks
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Syntactic Parsing}
+    \begin{itemize}
+        \item Labeled Attachment scores : overlap between human created and automatically generated syntactic trees
+        \item Semantic relation between two words
+        \item 17 languages covered jointly by the benchmarks
+        \item English and Arabic are common languages in both benchmarks
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Morphological Inflection}
+    \begin{itemize}
+        \item Shared task from SIG-MORPHON workshop from 2016 to 2020
+        \item Exact-match accuracy on a test set for each language
     \end{itemize}
 \end{frame}
 
