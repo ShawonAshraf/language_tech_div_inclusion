@@ -256,10 +256,10 @@ Universität Stuttgart \\ % Your institution for the title page
 
 \begin{frame}{Syntactic Parsing}
     \begin{itemize}
+        \item UDPipe \cite{udpipe} and UDify \cite{udify}
         \item Labeled Attachment scores : overlap between human created and automatically generated syntactic trees
         \item Semantic relation between two words
-        \item 17 languages covered jointly by the benchmarks
-        \item English and Arabic are common languages in both benchmarks
+
     \end{itemize}
 \end{frame}
 
@@ -300,7 +300,7 @@ Universität Stuttgart \\ % Your institution for the title page
 \end{frame}
 
 \begin{frame}{Results (contd.)}
-    \begin{block}{Question Answering and Natural Language Inference, $M_{\text{arabic}} = 0.58$, $M_{\text{arabic}} = 0.23$}
+    \begin{block}{Question Answering and Natural Language Inference, $M_{\text{arabic}} = 0.58$, $M_{\text{swahili}} = 0.23$}
         \begin{itemize}
             \item 15 to 17 languages
             \item Important: Arabic and Swahili have almost similar utility. Yet the score difference is large.
@@ -313,7 +313,7 @@ Universität Stuttgart \\ % Your institution for the title page
 \end{frame}
 
 \begin{frame}
-\frametitle{Tools vs Language usage}
+\frametitle{Utility of systems}
 %Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
 \begin{figure}
 \includegraphics[width=0.8\linewidth]{presentation_images/chart1.png}
@@ -328,7 +328,7 @@ Universität Stuttgart \\ % Your institution for the title page
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Academia}
+\begin{frame}{Role of Academia}
     \begin{itemize}
         \item Lack of language description in published work
         \item Prevalence of English leads to more work on English
@@ -364,7 +364,7 @@ Universität Stuttgart \\ % Your institution for the title page
     \begin{itemize}
         \item Can the Academics bridge the gap between research results and these results becoming usable tools for the common folk?
         \item Should development of NLP systems be primarily motivated by commercial factors?
-        \item Why do linguistic tasks perform better on languages with less NLP tools?
+        \item Why do linguistic tasks perform better on languages with less resources and tools?
     \end{itemize}
 \end{frame}
 
@@ -425,6 +425,27 @@ Universität Stuttgart \\ % Your institution for the title page
 \bibitem[Lewis et al (2019)]{mlqa} Lewis, Patrick and O{\u{g}}uz, Barlas and Rinott, Ruty and Riedel, Sebastian and Schwenk, Holger (2019)
 \newblock MLQA: Evaluating cross-lingual extractive question answering
 \newblock \emph{arXiv preprint arXiv:1910.07475}
+\end{thebibliography}
+
+}
+\end{frame}
+
+
+\begin{frame}
+\footnotesize{
+    
+\begin{thebibliography}{105} % Beamer does not support BibTeX so references must be inserted manually as below
+\bibitem[ Straka (2018)]{udpipe} Straka, Milan (2018)
+\newblock {UDP}ipe 2.0 Prototype at {C}o{NLL} 2018 {UD} Shared Task
+\newblock \emph{Proceedings of the {C}o{NLL} 2018 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies}, P197--207
+\end{thebibliography}
+
+
+\begin{thebibliography}{106} % Beamer does not support BibTeX so references must be inserted manually as below
+\bibitem[Kondratyuk et al (2019)]{udify} Kondratyuk, Dan  and
+      Straka, Milan (2019)
+\newblock 75 Languages, 1 Model: Parsing {U}niversal {D}ependencies Universally
+\newblock \emph{Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)}, P2779--2795
 \end{thebibliography}
 
 }
